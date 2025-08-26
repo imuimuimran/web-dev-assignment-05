@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>জাতীয় জরুরী সেবা</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- TailWind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="max-w-[1920px] mx-auto">
+    <!-- Navbar Section -->
+    <section class="bg-white border-red-500 border-2 h-[100px]">
+        <div class="flex justify-between items-center my-4 mx-5 border-green-500 border-2">
+            <div class="w-[200px] flex justify-center items-center border-red-500 border-2">
+                <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px]">
+                <h1 class="text-[#006747] text-xl font-extrabold ml-3">Emergency Service</h1>
+            </div>
+
+            <div class="flex justify-center items-center border-red-500 border-2">
+                <div class="w-[100px] rounded-3xl bg-[#ecfff0] flex justify-center items-center py-2">
+                    <h2 class="mr-3 font-bold"><span>0</span></h2>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                </div>
+
+                <div class="w-[100px] rounded-3xl bg-[#ecfff0] ml-3 flex justify-center items-center py-2">
+                    <h2 class="mr-3 font-bold"><span>100</span></h2>
+                    <img src="./assets/coin.png" alt="" class="w-[24px] h-[24px]">
+                </div>
+
+                <button class="btn bg-[#00a63e] rounded-3xl w-[110px] text-white ml-3"><span>0</span> Copy</button>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

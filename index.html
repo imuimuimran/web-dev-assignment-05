@@ -14,15 +14,15 @@
 <body class="max-w-[1920px] mx-auto">
     
     <!-- Navbar Section -->
-    <section class="bg-white border-red-500 border-2 max-w-full mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 py-4 px-4 mx-auto border-green-500 border-2 max-w-[1800px]">
+    <section class="bg-white max-w-full mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 py-4 px-4 mx-auto max-w-[1800px]">
             
-            <div class="w-full md:w-[200px] flex justify-center md:justify-start items-center border-red-500 border-2">
+            <div class="w-full md:w-[200px] flex justify-center md:justify-start items-center">
                 <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px]">
                 <h1 class="text-[#006747] text-xl font-extrabold ml-3">Emergency Service</h1>
             </div>
 
-            <div class="flex flex-col sm:flex-row justify-center items-center border-red-500 border-2 gap-3">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
             
                 <div class="w-[100px] h-[50px] rounded-3xl bg-[#ecfff0] flex justify-center items-center px-3">
                     <h2 id="count-heart" class="mr-3 font-bold text-xl"><span>0</span></h2>
@@ -34,14 +34,14 @@
                     <img src="./assets/coin.png" alt="" class="w-[24px] h-[24px]">
                 </div>
 
-                <button class="btn bg-[#00a63e] rounded-3xl w-[110px] h-[50px] text-white text-xl"><span>0</span> Copy</button>
+                <button id="btn-copy-navbar" class="btn bg-[#00a63e] rounded-3xl w-[110px] h-[50px] text-white text-xl"><span>0</span> Copy</button>
             </div>
         </div>
     </section>
 
     <!-- Banner Section -->
     <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] min-h-[240px] max-w-full mx-auto flex justify-center items-center px-4 text-center">
-        <div class="text-white flex flex-col items-center mx-auto border-red-500 border-2 p-4">
+        <div class="text-white flex flex-col items-center mx-auto p-4">
             <img src="./assets/logo-dark.png" alt="" class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]">
             <h1 class="text-2xl md:text-3xl font-semibold mt-3">জরুরী সেবা ডিরেক্টরী</h1>
             <p class="md:text-xl mt-3">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
@@ -51,9 +51,12 @@
 
 
     <!-- Main Section -->
-    <section class="bg-[#f5fff6] max-w-full border-red-500 border-2 mx-auto py-10">
-        <div class="max-w-[1800px] mx-auto flex flex-col lg:flex-row border-green-500 border-2 gap-6 px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:w-[75%] border-yellow-500 border-2">
+    <section class="bg-[#f5fff6] max-w-full mx-auto py-10">
+        <div class="max-w-[1800px] mx-auto flex flex-col lg:flex-row gap-6 px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:w-[75%]">
+
+
+                <!-- Card PArt -->
                 <div class="card-item shadow-md p-5 gap-6 rounded-lg bg-[#ffffff]">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-xl">
@@ -69,7 +72,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">999</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">সার্বজনীন</button>
                     <div class="w-full flex mt-3 gap-2">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -90,7 +93,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">999</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">পুলিশ</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -110,7 +113,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">999</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">ফায়ার</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -130,7 +133,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">01994-999999</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">স্বাস্থ্য</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -150,7 +153,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">109</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">সহায়তা</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -170,7 +173,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">106</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">সরকারী</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -190,7 +193,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">16216</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">বিদ্যুত</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -210,7 +213,7 @@
                     <h1 class="service-number text-3xl font-bold mt-3">16445</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">এনজিও</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -230,52 +233,33 @@
                     <h1 class="service-number text-3xl font-bold mt-3">163</h1>
                     <button class="btn border-none rounded-3xl text-gray-500">পরিবহন</button>
                     <div class="w-full flex mt-3">
-                        <button class="btn w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn btn-copy w-1/2 mr-2 rounded-lg text-gray-500 text-xl font-normal"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn btn-call w-1/2 rounded-lg bg-[#00a63e] text-white text-xl font-normal hover:bg-[#006747]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
             
             </div>
 
-
+            <!-- Call History PArt -->
             <div class="w-full lg:w-[25%]">
-                <div class="shadow-md border-blue-500 border-2 p-5 rounded-lg bg-[#ffffff] h-full">
+                <div class="shadow-md p-5 rounded-lg bg-[#ffffff] h-full">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 gap-3">
                         <h2 class="text-2xl flex items-center"><i class="fa-regular fa-clock mr-3 text-gray-500"></i><span class="font-bold">Call History</span></h2>
-                    <button class="btn bg-[#00a63e] rounded-3xl px-5 py-2 text-white text-lg">Clear</button>
+                    <button id="btn-clear" class="btn bg-[#00a63e] rounded-3xl px-5 py-2 text-white text-lg">Clear</button>
                     </div>
 
-                    <div class="rounded-xl bg-[#fafafa] mt-2 flex justify-between items-center p-4">
+                    <div id ="call-history-container">
+
+                    </div>
+
+                    <!-- Need for blank div container -->
+                    <!-- <div class="call-history rounded-xl bg-[#fafafa] mt-2 flex justify-between items-center p-4">
                         <div>
                             <h2 class="text-lg md:text-xl font-semibold">জাতীয় জরুরী সেবা</h2>
                             <h2 class="text-gray-500 text-lg">999</h2>
                         </div>
                         <h2 class="text-sm md:text-xl font-semibold">10:16:00 AM</h2>
-                    </div>
-
-                    <div class="rounded-xl bg-[#fafafa] mt-2 flex justify-between items-center p-4">
-                        <div>
-                            <h2 class="text-lg md:text-xl font-semibold">জাতীয় জরুরী সেবা</h2>
-                            <h2 class="text-gray-500 text-lg">999</h2>
-                        </div>
-                        <h2 class="text-sm md:text-xl font-semibold">10:16:00 AM</h2>
-                    </div>
-
-                    <div class="rounded-xl bg-[#fafafa] mt-2 flex justify-between items-center p-4">
-                        <div>
-                            <h2 class="text-lg md:text-xl font-semibold">জাতীয় জরুরী সেবা</h2>
-                            <h2 class="text-gray-500 text-lg">999</h2>
-                        </div>
-                        <h2 class="text-sm md:text-xl font-semibold">10:16:00 AM</h2>
-                    </div>
-
-                    <div class="rounded-xl bg-[#fafafa] mt-2 flex justify-between items-center p-4">
-                        <div>
-                            <h2 class="text-lg md:text-xl font-semibold">জাতীয় জরুরী সেবা</h2>
-                            <h2 class="text-gray-500 text-lg">999</h2>
-                        </div>
-                        <h2 class="text-sm md:text-xl font-semibold">10:16:00 AM</h2>
-                    </div>
+                    </div>-->
                     
                 </div>
             </div>

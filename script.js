@@ -1,15 +1,15 @@
 // Count Heart
 const hearts = document.getElementsByClassName('heart');
-const countHeart = document.getElementById('count-heart')
+const countHeart = document.getElementById('count-heart');
 
 let totalCountHeart = 0;
 
 for (let i = 0; i < hearts.length; i++) {
-    hearts[i].addEventListener('click', function () {
+    hearts[i].addEventListener('click', function(){
         totalCountHeart++;
         countHeart.innerText = totalCountHeart;
     });
-}
+};
 
 // Call with Coin
 const callByCoin = document.getElementById('call-by-coin');
@@ -25,7 +25,7 @@ for(let j = 0; j < btnCall.length; j++){
         const serviceName = cardItem.querySelector('.service-name').innerText;
         const serviceNumber = cardItem.querySelector('.service-number').innerText;
 
-        const alertMessage = confirm(`Are you sure that you want to call '${serviceName}' which number is '${serviceNumber}'?`);
+        const alertMessage = confirm(`আপনি '${serviceName}' এর সহায়তা পেতে '${serviceNumber}' নাম্বারে কল করতে যচ্ছেন। নিশ্চিত হলে OK বাটন চাপুন।`);
 
         if(alertMessage){
             if(availableCoin >= 20){
@@ -48,7 +48,7 @@ for(let j = 0; j < btnCall.length; j++){
                 callHistoryContainer.appendChild(historyDiv);
             } 
             else{
-                alert("You don't have enough coin to call.");
+                alert("দুঃখিত! কল করার জন্য আপনার পর্যাপ্ত ব্যালান্স নেই।");
             }
         }
 
@@ -61,23 +61,24 @@ btnClear.addEventListener('click', function () {
     callHistoryContainer.innerHTML = "";
 });
 
-
 // Count and Copy
-const btnCopyNavbar = document.getElementById('btn-copy-navbar');
+const btnCopyNavbar = document.getElementById("btn-copy-navbar");
 let copyCount = 0;
 
-const btnCopy = document.getElementsByClassName('btn-copy');
+const btnCopy = document.getElementsByClassName("btn-copy");
 
 for (let k = 0; k < btnCopy.length; k++) {
-    btnCopy[k].addEventListener('click', function () {
-        const cardItem = btnCopy[k].closest('.card-item');
-        const serviceNumber = cardItem.querySelector('.service-number').innerText.trim();
+    btnCopy[k].addEventListener("click", function () {
+        const cardItem = this.closest(".card-item");
+        const serviceNumber = cardItem.querySelector(".service-number").innerText.trim();
+        const serviceName = cardItem.querySelector(".service-name").innerText.trim();
 
-        navigator.clipboard.writeText(serviceNumber).then(() => {
-            alert("The Number is copied");
+        navigator.clipboard.writeText(serviceNumber).then(function () {
+            alert(`'${serviceName}' এর নাম্বার '${serviceNumber}' কপি হয়েছে`);
             copyCount++;
-            btnCopyNavbar.querySelector("span").textContent = copyCount;
-        }).catch(err => {
+            btnCopyNavbar.querySelector("span").innerText = copyCount;
+
+        }).catch(function (err) {
             console.error("Failed to copy number: ", err);
         });
     });
